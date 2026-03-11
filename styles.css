@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: cornflowerblue;
+    color: #1f2937;
+}
+
+.app {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 280px 1fr 1fr;
+}
+
+.sidebar {
+    background: #111827;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sidebar h1 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.toolbar {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary {
+    background: #3b82f6;
+    color: white;
+}
+
+.danger {
+    background: #ef4444;
+    color: white;
+}
+
+.notes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.note-item {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.note-item.active {
+    background: rgba(59, 130, 246, 0.25);
+    border-color: rgba(59, 130, 246, 0.6);
+}
+
+.note-title {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.note-date {
+    font-size: 0.8rem;
+    color: #cbd5e1;
+}
+
+.editor-panel, .preview-panel {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.panel-header h2 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+#titleInput {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.editor-row {
+    display: flex;
+    align-items: center;
+}
+
+#contentInput {
+    width: 100%;
+    flex: 1;
+    resize: none;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: Consolas, monospace;
+}
+
+.preview-box {
+    flex: 1;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 18px;
+    overflow-y: auto;
+    line-height: 1.7;
+}
+
+.preview-box h1, .preview-box h2, .preview-box h3 {
+    margin-top: 0;
+}
+
+.empty-state {
+    color: #6b7280;
+    font-style: italic;
+}
+
+@media (max-width: 960px) {
+    .app {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        min-height: auto;
+    }
+
+    .editor-panel, .preview-panel {
+        min-height: 45vh;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Markdown Notes App</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="app">
+            <aside class="sidebar">
+                <h1>Markdown Notes</h1>
+                <div class="toolbar">
+                    <button class="primary" id="newNoteBtn">+ New</button>
+                    <button class="danger" id="deleteNoteBtn">Delete</button>
+                </div>
+                <div class="notes-list" id="notesList"></div>
+            </aside>
+
+            <section class="editor-panel">
+                <div class="panel-header">
+                    <h2>Editor</h2>
+                </div>
+                <input id="titleInput" type="text" placeholder="Note title" />
+                <textarea id="contentInput" placeholder="# Start writing your markdown here..."></textarea>
+            </section>
+
+            <section class="preview-panel">
+                <div class="panel-header">
+                    <h2>Preview</h2>
+                </div>
+                <div class="preview-box" id="previewOutput">
+                    <p class="empty-state">Live preview will appear here.</p>
+                </div>
+            </section>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
