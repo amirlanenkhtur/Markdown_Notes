@@ -34,13 +34,13 @@ This project was built using HTML, CSS, and JavaScript to practice DOM manipulat
 
 ## Technologies Used
 
-HTML
+* HTML
 
-CSS
+* CSS
 
-JavaScript
+* JavaScript
 
-Browser Local Storage
+* Browser Local Storage
 
 ---
 
@@ -53,13 +53,14 @@ All notes are saved automatically in the browser using localStorage, allowing no
 
 ---
 ## Project Structure
+```
 Markdown-Notes
 │
 ├── index.html
 ├── styles.css
 ├── script.js
 └── README.md
-
+```
 ---
 ## How to Run the Project
 
