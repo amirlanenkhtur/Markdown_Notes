@@ -64,8 +64,14 @@ Markdown-Notes
 ---
 ## How to Run the Project
 
-1. Clone the repository (git clone https://github.com/amirlanenkhtur/Markdown-Notes.git)
+1. Clone the repository (git clone git@github.com:amirlanenkhtur/Markdown_Notes.git)
 2. Open the folder
 3. Open index.html in a browser
 
 No installation required.
+
+---
+## Screenshot
+
+<img width="1848" height="871" alt="image" src="https://github.com/user-attachments/assets/e9855e2a-8b29-4cd2-baad-296c5ddb6213" />
+
